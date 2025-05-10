@@ -1,19 +1,27 @@
 import React from "react";
 import SingleItem from "./SingleItem";
-const ListItem = ({ name, quant }) => {
+import { Link } from "react-router-dom";
+const ListItem = ({ name, quant, itemArray,path }) => {
   return (
     <>
       <div className="Header">
         <h2>{name}</h2>
         <p>
-          <a href="">ver mais</a>
+          <Link to="/Home" className="verMais">ver mais</Link>
         </p>
       </div>
       <div className="list-item">
         {
-          Array(quant).fill().map((currentValue,index)=>(<SingleItem key={name+Array(quant).fill(index)}/>))
+          itemArray
+          .filter((currentValue, index) => index < quant)
+          .map((currentObj, index)=> (
+            <SingleItem
+            {...currentObj}
+            key={name+index}
+            path={path}/> 
+          ))
         }
-        </div>
+      </div>
     </>
   );
 };
