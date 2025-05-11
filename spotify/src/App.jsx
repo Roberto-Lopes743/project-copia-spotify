@@ -4,16 +4,17 @@ import Sartist from "./componets/img/Sartist";
 import Home from "./componets/Home";
 import Header from "./componets/Header";
 import Ssong from "./componets/Ssong";
+import Sartists from "./componets/Sartists";
 function App() {
   return (
     <>
-    <Header/>
     <BrowserRouter>
+    <Header/>
       <Routes>
         <Route path="Home" element={<Home />} />
-        <Route path="artist/:id" element={<Sartist/>} />
-        <Route path="song/:id" element={<Ssong/>} />
-        <Route path="Home" element={<Home />} />
+        <Route path="artists/:id" element={<Sartist/>} />
+        <Route path="songs" element={<Ssong/>} />
+        <Route path="artists" element={<Sartists/>} />
       </Routes>
     </BrowserRouter>
     </>
