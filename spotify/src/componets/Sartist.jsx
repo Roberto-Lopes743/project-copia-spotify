@@ -1,9 +1,8 @@
 import React from 'react'
-import { artistArray } from '../../database/artists'
+import {artistArray} from '../database/artists'
 const Sartist = () => {
   return (
     <>
-    
     </>
   )
 }

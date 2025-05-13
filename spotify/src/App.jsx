@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Sartist from "./componets/img/Sartist";
+import Sartist from "../src/componets/Sartist";
 import Home from "./componets/Home";
 import Header from "./componets/Header";
 import Ssong from "./componets/Ssong";
-import Sartists from "./componets/Sartists";
+import Sartists from "../src/componets/Sartists";
 function App() {
   return (
     <>
