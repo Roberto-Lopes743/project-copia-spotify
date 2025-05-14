@@ -4,6 +4,7 @@ const Sartist = () => {
   return (
     <>
     <h1>teu cu</h1>
+    <h2>cu de vrido</h2>
     </>
   )
 }
