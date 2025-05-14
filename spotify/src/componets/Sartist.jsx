@@ -3,6 +3,7 @@ import {artistArray} from '../database/artists'
 const Sartist = () => {
   return (
     <>
+    <h1>teu cu</h1>
     </>
   )
 }
